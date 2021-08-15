@@ -1,0 +1,44 @@
+{
+  "name": "@isce/host",
+  "version": "0.0.0",
+  "description": "host",
+  "author": "Ilya Alonov <fatawesomeee@gmail.com>",
+  "license": "ISC",
+  "main": "src/app.js",
+  "scripts": {
+    "server": "cross-env NODE_ENV=development webpack --config ./build/webpack.server.config.js --progress --watch",
+    "client": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.client.config.js --progress",
+    "serve": "nodemon --exec node ./server/index.js",
+    "start": "rimraf dist && npm-run-all --parallel client server serve"
+  },
+  "devDependencies": {
+    "@telenko/node-mf": "^0.0.5",
+    "@vue/compiler-sfc": "^3.2.2",
+    "@vue/server-renderer": "^3.2.2",
+    "babel-loader": "^8.2.2",
+    "bundle-loader": "^0.5.6",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "serve": "^12.0.0",
+    "vue-loader": "^16.3.0",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-middleware": "^5.0.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-manifest-plugin": "^4.0.2",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.16.1",
+    "express": "^4.17.1",
+    "vue": "^3.2.2",
+    "vue-router": "^4.0.10"
+  }
+}

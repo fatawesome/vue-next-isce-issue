@@ -1,0 +1,14 @@
+{
+  "name": "vue-next-isce-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ilya Alonov",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "lerna run --parallel start"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
