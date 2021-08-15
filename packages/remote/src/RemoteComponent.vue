@@ -1,6 +1,7 @@
 <template>
   <div>
     test remote component
+    <slot />
   </div>
 </template>
 
