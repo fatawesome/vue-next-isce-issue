@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'TestComponent'
+  name: 'RemoteComponent'
 };
 </script>
 
