@@ -3,8 +3,9 @@
     <div class="block host">
       Host content
     </div>
+    <RemoteComponent />
     <div class="block remote">
-      <RemoteComponent />
+      <input type="text" v-model="propertyZopa">
     </div>
   </div>
 </template>
@@ -15,7 +16,12 @@ const RemoteComponent = defineAsyncComponent(() => import('remote/RemoteComponen
 
 export default {
   name: 'App',
-  components: { RemoteComponent }
+  components: { RemoteComponent },
+  data() {
+    return {
+      propertyZopa: 'zopa'
+    }
+  }
 };
 </script>
 

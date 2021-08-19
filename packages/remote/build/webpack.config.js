@@ -1,7 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-'use strict';
-
-/* */
 
 const path = require('path');
 const webpack = require('webpack');
@@ -72,7 +69,8 @@ const getConfig = ({ target }) => ({
       },
       shared: {
         vue: {
-          requiredVersion: dependencies.vue
+          requiredVersion: dependencies.vue,
+          singleton: true
         }
       }
     }),
